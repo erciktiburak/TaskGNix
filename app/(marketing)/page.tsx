@@ -1,4 +1,6 @@
+import { Button } from "@/components/ui/button";
 import { Medal } from "lucide-react";
+import Link from "next/link";
 
 const MarketingPage = () => {
     return (
@@ -15,6 +17,14 @@ const MarketingPage = () => {
                     work forward.
                 </div>
             </div>
+            <div className="text-sm md:text-xl text-neutral-400 mt-4 max-w-xs md:max-w-2xl text-center mx-auto">
+                TaskGNix: Elevate teamwork, manage projects, boost productivity – from high rises to home offices.
+            </div>
+              <Button className="mt-6" size="lg" asChild>
+                <Link href="/sign-up">
+                    Get TaskGNix for free
+                </Link>
+              </Button>
         </div>
     );
 };
