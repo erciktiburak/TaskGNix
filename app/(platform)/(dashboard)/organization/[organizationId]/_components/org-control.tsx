@@ -1,4 +1,4 @@
-"use-client";
+"use client";
 
 import { useEffect } from "react";
 import { useParams } from "next/navigation";
@@ -10,10 +10,11 @@ export const OrgControl = () => {
 
     useEffect(() => {
         if (!setActive) return;
+        
         setActive({
             organization: params.organizationId as string,
         });
-    }, [params.organizationId, setActive]);
+    }, [setActive ,params.organizationId]);
 
     return null;
 }
